@@ -3,7 +3,7 @@
 using namespace std;
 
 void func(int *ponteiro, int n, int &max, int &min){
-  for(int k=0; k<n; k++){
+  for(int k = 0; k < n; k++){
     cout << *ponteiro << " ";
     if(min > *ponteiro){
       min = *ponteiro;
@@ -14,8 +14,7 @@ void func(int *ponteiro, int n, int &max, int &min){
     ponteiro++;
   }
   cout << endl;
-  cout << max << endl;
-  cout << min << endl;
+  cout << "Max = " << max << "," << "Min = " << min << endl;
 }
 
 int main() {
